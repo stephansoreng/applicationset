@@ -19,10 +19,10 @@ spec:
   - host: aks2.blogonclouds.com
     http:
       paths:
-      - path: /guestbook
+      - path: /hello
         pathType: Prefix
         backend:
           service:
-            name: guestbook-ui
+            name: aks-helloworld-one
             port:
               number: 80
