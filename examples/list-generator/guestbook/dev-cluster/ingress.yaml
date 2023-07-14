@@ -7,10 +7,6 @@ metadata:
     cert-manager.io/cluster-issuer: letsencrypt
     kubernetes.io/tls-acme: "true"
     nginx.ingress.kubernetes.io/ssl-passthrough: "true"
-    nginx.org/server-snippets: |
-      upstream myupstream {
-        server remote-hostname:443;
-      }
     #nginx.ingress.kubernetes.io/rewrite-target: /$1
     #nginx.ingress.kubernetes.io/use-regex: "true"
     # If you encounter a redirect loop or are getting a 307 response code
@@ -29,4 +25,4 @@ spec:
           service:
             name: guestbook-ui
             port:
-              number: 443
+              number: 80
