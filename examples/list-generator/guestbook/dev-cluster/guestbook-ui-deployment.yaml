@@ -20,4 +20,4 @@ spec:
         - containerPort: 80
         env:
         - name: TITLE
-          value: "Welcome to Azure Kubernetes Service (AKS)"
+          value: "Welcome to a cluster controlled by ArgoCD"
