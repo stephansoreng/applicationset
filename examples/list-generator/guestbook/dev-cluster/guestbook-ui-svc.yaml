@@ -4,10 +4,6 @@ metadata:
   name: guestbook-ui
 spec:
   ports:
-  - name: http
-    port: 80
-    targetPort: 80
-  - name: https
     port: 443
     targetPort: 80
   selector:
